@@ -1,0 +1,43 @@
+[
+    {
+      "slug": "vincent-charamon",
+      "link": "https://vincentcharamon.com/",
+      "title": "Vincent Charamon - Portfolio",
+      "category": "HTML/CSS, JavaScript, NuxtJS"
+    },
+    {
+      "slug": "loreal-finance-2022",
+      "link": "https://www.loreal-finance.com/en/annual-report-2022/",
+      "title": "L’Oréal - Annual report 2022",
+      "category": "HTML/CSS, JavaScript, Twig, WordPress",
+      "team": "Volatil"
+    },
+    {
+      "slug": "lacoste-90",
+      "link": "https://90.lacoste.com/",
+      "title": "Lacoste - 90th anniversary",
+      "category": "HTML/CSS, JavaScript, Twig, WordPress",
+      "team": "Volatil"
+    },
+    {
+      "slug": "aarok",
+      "link": "https://aarok.fr/",
+      "title": "Aarok - Military drone",
+      "category": "HTML/CSS, JavaScript, Gsap, Twig, WordPress",
+      "team": "Volatil"
+    },
+    {
+      "slug": "alexandre-mars",
+      "link": "https://alexandremars.com/",
+      "title": "Alexandre Mars - Entrepreneur",
+      "category": "HTML/CSS, JavaScript, WordPress",
+      "team": "Ippon Technologies"
+    },
+    {
+      "slug": "6freedom",
+      "link": "https://6freedom.studio/",
+      "title": "6freedom - Immersive technologies",
+      "category": "HTML/CSS, JavaScript, Gsap, WordPress"
+    }
+  ]
+  
