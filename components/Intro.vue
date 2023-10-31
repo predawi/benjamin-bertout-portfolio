@@ -53,7 +53,7 @@ export default {
     }
 
     strong {
-        color: $secondary;
+        color: var(--secondary-color);
         font-weight: 400;
     }
 

@@ -1,13 +1,10 @@
-$maincolor: #000;
-$secondary: #E2BCB4;
-$tertiary: #8856F3;
-
-$blackcolor: #000;
-$textcolor: #fff;
-
-$maingrey: #F5F5F5;
-$lightcolor: #fff;
-
+:root {
+    --bg-color: #000;
+    --main-color: #000;
+    --secondary-color: #E2BCB4;
+    --tertiary-color: #8856F3;
+    --text-color: #fff;
+}
 
 $base-font-size: 16px;
 

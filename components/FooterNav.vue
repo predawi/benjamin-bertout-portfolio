@@ -31,7 +31,7 @@
         font-weight: 400;
 
         a {
-            color: $textcolor;
+            color: var(--text-color);
         }
     }
 }

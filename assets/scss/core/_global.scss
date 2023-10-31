@@ -7,15 +7,15 @@
 body {
     margin: 0;
     padding: 0;
-    background: $maincolor;
+    background-color: var(--bg-color);
     font-size: $base-font-size;
     line-height: $base-font-size;
     font-family: 'Lato', sans-serif;
-    color: $textcolor;
+    color: var(--text-color);
 }
 
 a {
-    color: $textcolor;
+    color: var(--text-color);
     text-decoration: none;
 }
 

@@ -30,7 +30,7 @@ export default {
 	components: {
 		ProjectCard,
   	},
-      data() {
+    data() {
 		return {
 			projects,
 		}

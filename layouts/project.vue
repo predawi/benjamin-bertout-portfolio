@@ -28,8 +28,6 @@ export default {
 
 <style lang="scss">
 .project-template {
-	background: $maingrey;
-
 	.container {
 		@include tablet {
 			max-width: 1060px;

@@ -28,19 +28,6 @@ export default {
 
 <style lang="scss">
 .about-template {
-	background: $blackcolor;
-	color: #fff;
-	transition: background-color .5s ease-out;
-
-	.nav__button,
-	a {
-		color: #fff;
-	}
-
-	.nav__list-item a {
-		@include tablet {
-			color: #fff;
-		}
-	}
+	
 }
 </style>

@@ -43,7 +43,7 @@ export default {
             display: block;
             width: 42px;
             height: 100%;
-            border: 1px solid $maincolor;
+            border: 1px solid var(--bg-color);
 
             @include tablet {
                 width: 52px;

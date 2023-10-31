@@ -40,7 +40,7 @@ export default {
     left: 0;
     width: 100%;
     height: 0;
-    background: $blackcolor;
+    background: var(--main-color);
     overflow: hidden;
     transition: height 1s $expoInOut;
 
@@ -74,14 +74,10 @@ export default {
         font-size: rem(14px);
         font-weight: 400;
         font-family: 'Lexend', sans-serif;
-        color: $lightcolor;
+        color: var(--text-color);
 
         @include tablet {
             display: none;
-        }
-
-        .nav--open & {
-            color: $lightcolor;
         }
     }
 
@@ -113,10 +109,10 @@ export default {
         a {
             display: flex;
             flex-wrap: wrap;
-            color: $lightcolor;
+            color: var(--text-color);
 
             @include tablet {
-                color: $textcolor;
+                color: var(--text-color);
             }
         }
     }
