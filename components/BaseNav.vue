@@ -6,7 +6,7 @@
 					<button class="nav__button">Menu</button>
 				</div>
 
-				<ul class="nav__list">
+				<ul class="nav__list" type="none">
 					<li class="nav__list-item">
 						<NuxtLink to="/">home/projects</NuxtLink>
 					</li>
@@ -107,12 +107,16 @@ export default {
         }
 
         a {
-            display: flex;
-            flex-wrap: wrap;
             color: var(--text-color);
+            transition: .2s ease-out;
 
-            @include tablet {
-                color: var(--text-color);
+            &:hover,
+            &:focus {
+                color: var(--secondary-color);
+            }
+
+            &.router-link-active {
+                color: var(--secondary-color);
             }
         }
     }

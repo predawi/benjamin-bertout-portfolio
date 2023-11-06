@@ -19,13 +19,34 @@
 
 <script>
 export default {
-	name: 'Intro'
+	name: 'Intro',
+    mounted() {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-delay');
+                    }
+                });
+            },
+            { threshold: 0.5 }
+        );
+
+        observer.observe(document.querySelector('.intro'));
+
+        [...document.querySelectorAll('.intro__picture > span')].forEach(function (item, index) {
+            item.style.transitionDelay = index * 0.01 + 's';
+            item.style.opacity = 1;
+        });
+    },
 }
 </script>
 
 <style lang="scss">
 .intro {
     margin-top: 0;
+    opacity: 0;
+    transform: translateY(10px);
 
     @include tablet {
         margin-top: rem(120px);
@@ -49,6 +70,10 @@ export default {
 
         @include tablet {
             transform: scale(0.8);
+        }
+
+        & > span {
+            opacity: 0;
         }
     }
 

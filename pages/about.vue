@@ -5,7 +5,7 @@
   </div>
 </template>
 <script>
-definePageMeta({ layout: 'about' })
+definePageMeta({ layout: 'default' })
 
 import AboutMe from '~/components/AboutMe.vue';
 import AboutMePassion from '~/components/AboutMePassion.vue';

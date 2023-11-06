@@ -2,7 +2,7 @@
     <div>
         <h2 class="typo-t2">Feel free to contact me</h2>
         <nav class="footer-nav__nav">
-            <ul class="footer-nav__list">
+            <ul class="footer-nav__list" type="none">
                 <li class="footer-nav__list-item">
                     <a href="https://www.malt.fr/profile/benjaminbertout" target="_blank"><span>malt</span></a>
                 </li>

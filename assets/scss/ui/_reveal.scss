@@ -1,19 +1,4 @@
-// .union-path {
-//     stroke-dasharray: 3000;
-//     stroke-dashoffset: 3000;
-// }
-
-// .reveal-visible .union-path {
-//     animation: dash 3s linear forwards;
-// }
-
-// @keyframes dash {
-//   to {
-//     stroke-dashoffset: 0;
-//   }
-// }
-
-
+// Pages transitions
 .page-enter-active, .page-leave-active {
   transition: opacity .5s;
 }
@@ -40,4 +25,11 @@
   [class$=__bg] {
     opacity: 0;
   }
+}
+
+// Reveal effect
+.animate-delay {
+  transition-duration: 0.5s;
+  transform: translateY(0) !important;
+  opacity: 1 !important;
 }

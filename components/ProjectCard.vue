@@ -1,5 +1,5 @@
 <template>
-    <div class="project-card">
+    <div class="project-card" :id=id>
         <a :href=link class="project-card__link" target="_blank">
             <div class="project-card__deco"></div>
             <h3 class="project-card__title">{{ title }}</h3>
@@ -12,7 +12,21 @@
 <script>
 export default {
     name: 'project-card',
-    props: ['link', 'title', 'category', 'team'],
+    props: ['link', 'title', 'category', 'team', 'key'],
+    mounted() {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-delay');
+                    }
+                });
+            },
+            { threshold: 0.5 }
+        );
+
+        observer.observe(document.querySelector('.project-card[id=' + this.id + ']'));
+    }
 }
 </script>
 

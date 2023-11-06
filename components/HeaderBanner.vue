@@ -15,7 +15,7 @@ export default {
 	components: {
 		Logo,
 		BaseNav,
-	}
+	},
 };
 </script>
 

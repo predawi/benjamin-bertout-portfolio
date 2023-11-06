@@ -1,13 +1,13 @@
 .typo-t1 {
     margin: 0;
-    font-size: rem(72px);
-    font-weight: 100;
-    line-height: rem(86px);
+    font-size: rem(40px);
+    line-height: rem(50px);
+    font-weight: 300;
     font-family: 'Lexend', sans-serif;
 
     @include tablet {
-        font-size: rem(100px);
-        line-height: rem(108px);
+        font-size: rem(60px);
+        line-height: rem(70px);
     }
 }
 
@@ -33,21 +33,13 @@
 }
 
 .typo-p {
-    font-size: rem(20px);
-    font-weight: 300;
+    font-size: rem(18px);
     line-height: rem(26px);
-
-    @include tablet {
-        font-size: rem(22px);
-        line-height: rem(29px);
-    }
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
 
     p {
         margin: rem(20px) 0 0;
-
-        & + ul {
-            margin-top: 0;
-        }
     }
 
     small {
@@ -55,16 +47,8 @@
         font-size: rem(16px);
     }
 
-    ul {
-        margin-top: rem(20px);
-
-        list-style-type: disc;
-        list-style-position: inside;
-
-        h3 {
-            display: inline-block;
-            margin-top: rem(40px);
-        }
+    & + .typo-t2 {
+        margin-top: rem(40px);
     }
 }
 

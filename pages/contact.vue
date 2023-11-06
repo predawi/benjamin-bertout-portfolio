@@ -6,7 +6,7 @@
 
 
 <script>
-definePageMeta({ layout: 'contact' })
+definePageMeta({ layout: 'default' })
 
 import Contact from '~/components/Contact.vue';
 

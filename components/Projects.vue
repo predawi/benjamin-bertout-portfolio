@@ -9,6 +9,7 @@
                 <project-card
 					v-for="(project, index) in projects"
 					:key="project.slug + index"
+                    :id="project.slug"
 					:link="project.link"
 					:title="project.title"
 					:category="project.category"
@@ -23,7 +24,7 @@
 
 <script>
 import projects from '../data/project-list.json';
-import ProjectCard from '~/components/ProjectCard.vue'
+import ProjectCard from '~/components/ProjectCard.vue';
 
 export default {
 	name: 'NuxtProjects',
