@@ -59,7 +59,7 @@ export default {
     position: relative;
     top: rem(10px);
     opacity: 0;
-    margin-top: rem(30px);
+    margin-top: rem(60px);
 
     @include tablet {
         margin-top: rem(120px);
@@ -74,7 +74,12 @@ export default {
     }
 
     &__intro {
+        margin-bottom: rem(100px);
         padding-right: 15%;
+
+        @include tablet {
+            margin-bottom: 0;
+        }
     }
 
     &__title {
@@ -82,14 +87,12 @@ export default {
     }
 
     &__picture {
-        width: 437px;
-        transform: scale(0.7);
-        transform-origin: left;
-        font: 9px monospace;
-        line-height: 11px;
-        background-color: black;
-
         @include tablet {
+            width: 437px;
+            transform-origin: left;
+            font: 9px monospace;
+            line-height: 11px;
+            background-color: black;
             transform: none;
         }
 

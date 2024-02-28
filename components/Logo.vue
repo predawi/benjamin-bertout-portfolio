@@ -19,6 +19,8 @@ export default {
 <style lang="scss">
 .header__logo {
     position: relative;
+    z-index: 998;
+    display: inline-flex;
 
     @include tablet {
         
@@ -43,6 +45,10 @@ export default {
         display: flex;
         flex-flow: column;
         font-family: 'Lexend', sans-serif;
+
+        .nav-is-opened & {
+            color: var(--bg-nav);
+        }
     }
 
     &-name {

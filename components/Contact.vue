@@ -37,11 +37,12 @@ export default {
     position: relative;
     top: rem(10px);
     opacity: 0;
+    margin-top: rem(60px);
     margin-bottom: rem(100px);
-    padding-top: rem(128px);
 
     @include tablet {
-        
+        margin-top: 0;
+        padding-top: rem(128px);
     }
 
     &__title {
@@ -50,12 +51,14 @@ export default {
 
     &__list {
         padding: rem(30px) 0 rem(20px);
-        border-bottom: 1px solid var(--tertiary-color);
+        border-bottom: 1px solid var(--main-grey);
+        list-style: none;
 
         @include tablet {
             display: flex;
             flex-wrap: wrap;
             padding: rem(50px) 0 rem(40px);
+            list-style: disc;
         }
     }
 

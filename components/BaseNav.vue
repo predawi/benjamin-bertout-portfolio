@@ -1,46 +1,54 @@
 <template>
-	<div>
-		<nav id="nav" :class="{ 'nav nav--open': isToggled, 'nav nav--close': !isToggled }">
-			<div class="nav__inner">
-				<div id="burger" @click="isToggled = !isToggled">
-					<button class="nav__button">Menu</button>
-				</div>
+    <div>
+        <nav id="nav" :class="{ 'nav nav--open': isToggled, 'nav nav--close': !isToggled }">
+            <div class="nav__inner">
+                <div id="burger" @click="menuClicked">
+                    <button class="nav__button">Menu</button>
+                </div>
 
-				<ul class="nav__list" type="none">
-					<li class="nav__list-item">
-						<NuxtLink to="/" @click="isToggled = false">home/projects</NuxtLink>
-					</li>
-					<li class="nav__list-item">
-						<NuxtLink to="/about" @click="isToggled = false">about</NuxtLink>
-					</li>
-					<li class="nav__list-item">
-						<NuxtLink to="/contact" @click="isToggled = false">contact</NuxtLink>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
+                <ul class="nav__list" type="none">
+                    <li class="nav__list-item">
+                        <NuxtLink to="/" @click="menuClicked">home/projects</NuxtLink>
+                    </li>
+                    <li class="nav__list-item">
+                        <NuxtLink to="/about" @click="menuClicked">about</NuxtLink>
+                    </li>
+                    <li class="nav__list-item">
+                        <NuxtLink to="/contact" @click="menuClicked">contact</NuxtLink>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </template>
 
 <script>
 export default {
-	data: function () {
-		return {
-			isToggled: false,
-		}
-	}
+    data: function () {
+        return {
+            isToggled: false,
+        }
+    },
+    methods: {
+        menuClicked: function () {
+            this.isToggled = !this.isToggled;
+            
+            document.body.classList.toggle('nav-is-opened')
+            //document.querySelector('#nav').classList.toggle('nav--open')
+        }
+    }
 };
 </script>
 
 <style lang="scss">
 .nav {
     position: fixed;
-    z-index: 998;
+    z-index: 997;
     top: 0;
     left: 0;
     width: 100%;
     height: 0;
-    background: var(--main-color);
+    background: var(--bg-nav);
     overflow: hidden;
     transition: height 1s $expoInOut;
 
@@ -82,6 +90,7 @@ export default {
     }
 
     &__list {
+        margin: rem(60px) 0 0;
         padding-left: rem(38px);
 
         @include tablet {
@@ -90,11 +99,10 @@ export default {
     }
 
     &__list-item {
-        margin-bottom: 5vh;
-        font-size: rem(35px);
+        font-size: rem(25px);
         font-weight: 400;
         font-family: 'Lexend', sans-serif;
-        line-height: rem(77px);
+        line-height: rem(50px);
         word-break: break-word;
         text-transform: capitalize;
 
