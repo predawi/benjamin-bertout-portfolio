@@ -8,13 +8,13 @@
 
 				<ul class="nav__list" type="none">
 					<li class="nav__list-item">
-						<NuxtLink to="/" @click="isToggled = !isToggled">home/projects</NuxtLink>
+						<NuxtLink to="/" @click="isToggled = false">home/projects</NuxtLink>
 					</li>
 					<li class="nav__list-item">
-						<NuxtLink to="/about" @click="isToggled = !isToggled">about</NuxtLink>
+						<NuxtLink to="/about" @click="isToggled = false">about</NuxtLink>
 					</li>
 					<li class="nav__list-item">
-						<NuxtLink to="/contact" @click="isToggled = !isToggled">contact</NuxtLink>
+						<NuxtLink to="/contact" @click="isToggled = false">contact</NuxtLink>
 					</li>
 				</ul>
 			</div>
