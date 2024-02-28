@@ -28,14 +28,18 @@
 }
 
 .typo-category {
-    font-size: rem(14px);
+    font-size: rem(12px);
     font-family: 'Lexend', sans-serif;
+
+    @include tablet {
+        font-size: rem(14px);
+    }
 }
 
 .typo-p {
     font-size: rem(18px);
     line-height: rem(26px);
-    font-weight: 400;
+    font-weight: 300;
     font-family: 'Lato', sans-serif;
 
     p {

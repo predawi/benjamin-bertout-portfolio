@@ -46,7 +46,7 @@ export default {
     &__link {
         position: relative;
         display: block;
-        padding: rem(30px) 0 rem(10px);
+        padding: rem(30px) 0;
         position: relative;
 	    overflow: hidden;
 
@@ -56,6 +56,7 @@ export default {
         @include tablet {
             display: flex;
             align-items: flex-end;
+            padding: rem(30px) 0 rem(10px);
         }
 
         &::after {
@@ -97,11 +98,13 @@ export default {
         z-index: 1;
         margin: 0;
         font-weight: 300;
-        line-height: rem(40px);
-        font-size: rem(26px);
+        line-height: rem(30px);
+        font-size: rem(24px);
 
         @include tablet {
             margin-right: rem(30px);
+            line-height: rem(40px);
+            font-size: rem(26px);
         }
     }
 
@@ -110,7 +113,6 @@ export default {
         display: block;
         position: relative;
         z-index: 1;
-        margin-top: rem(16px);
         color: var(--secondary-color);
 
         @include tablet {
@@ -118,6 +120,14 @@ export default {
             margin-top: 0;
             position: relative;
             top: -6px;
+        }
+    }
+
+    &__category {
+        margin-top: rem(10px);
+
+        @include tablet {
+
         }
     }
 

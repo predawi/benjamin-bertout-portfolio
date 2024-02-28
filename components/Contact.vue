@@ -1,7 +1,7 @@
 <template>
     <div class="contact">
         <div class="container">
-            <h1 class="typo-t1 contact__title">Let's get in touch</h1>
+            <h1 class="typo-t1 contact__title">Let's get in <span class="secondary-color">touch</span></h1>
 
             <ul class="contact__list">
                 <li class="contact__item"><a href="https://www.malt.fr/profile/benjaminbertout" target="_blank">MALT</a></li>
@@ -14,13 +14,29 @@
 
 <script>
 export default {
-	name: 'Contact'
+	name: 'Contact',
+    mounted() {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-delay');
+                    }
+                });
+            },
+            { threshold: 0.5 }
+        );
+
+        observer.observe(document.querySelector('.contact'));
+    }
 }
 </script>
 
 <style lang="scss">
 .contact {
     position: relative;
+    top: rem(10px);
+    opacity: 0;
     margin-bottom: rem(100px);
     padding-top: rem(128px);
 
