@@ -62,18 +62,20 @@ export default {
     }
 
     &__picture {
+        white-space: nowrap;
         width: 437px;
-        transform: scale(0.7);
+        transform: scale(1);
         transform-origin: left;
         font: 9px monospace;
         line-height: 11px;
         background-color: black;
 
         @include tablet {
-            transform: scale(0.8);
+            transform: scale(0.8, 0.8);
         }
 
         & > span {
+            white-space: nowrap;
             opacity: 0;
         }
     }
