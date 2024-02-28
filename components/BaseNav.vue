@@ -31,10 +31,8 @@ export default {
     },
     methods: {
         menuClicked: function () {
-            this.isToggled = !this.isToggled;
-            
+            this.isToggled = !this.isToggled
             document.body.classList.toggle('nav-is-opened')
-            //document.querySelector('#nav').classList.toggle('nav--open')
         }
     }
 };

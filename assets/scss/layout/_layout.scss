@@ -1,5 +1,7 @@
 body {
     &.nav-is-opened {
-        overflow: hidden;
+        @include mobile {
+            overflow: hidden;
+        }
     }
 }
