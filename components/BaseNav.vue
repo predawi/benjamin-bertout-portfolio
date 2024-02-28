@@ -62,7 +62,9 @@ export default {
     }
 
     &.nav--open {
-        height: 100vh;
+        @include mobile {
+            height: 100vh;
+        }
     }
 
     &__inner {
@@ -95,6 +97,7 @@ export default {
 
         @include tablet {
             display: flex;
+            margin: 0;
         }
     }
 

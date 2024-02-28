@@ -47,7 +47,9 @@ export default {
         font-family: 'Lexend', sans-serif;
 
         .nav-is-opened & {
-            color: var(--bg-nav);
+            @include mobile {
+                color: var(--bg-nav);
+            }
         }
     }
 
