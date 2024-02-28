@@ -32,6 +32,11 @@
 
         a {
             color: var(--text-color);
+
+            &:hover,
+            &:focus {
+                color: var(--tertiary-color);
+            }
         }
     }
 }

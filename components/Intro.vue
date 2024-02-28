@@ -44,9 +44,10 @@ export default {
 
 <style lang="scss">
 .intro {
+    position: relative;
+    top: rem(10px);
     margin-top: 0;
     opacity: 0;
-    transform: translateY(10px);
 
     @include tablet {
         margin-top: rem(120px);

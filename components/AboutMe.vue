@@ -3,7 +3,7 @@
 
         <div class="container about-me__container">
             <div class="about-me__intro">
-                <h1 class="typo-t1 about-me__title">About me</h1>
+                <h1 class="typo-t1 about-me__title">About <span class="secondary-color">me</span></h1>
                 <p class="typo-p about-me__description">
                     Born & raised in Paris, I discovered web development about 10 years ago. I've spent 5 years at BeAPI, the leading WordPress agency in France, then I took off to fly by myself as a freelancer.</p>
                 <p class="typo-p">

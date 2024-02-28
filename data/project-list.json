@@ -1,9 +1,9 @@
 [
     {
-      "slug": "vincent-charamon",
-      "link": "https://vincentcharamon.com/",
-      "title": "Vincent Charamon - Portfolio",
-      "category": "HTML/CSS, JavaScript, NuxtJS"
+      "slug": "6freedom",
+      "link": "https://6freedom.studio/",
+      "title": "6freedom - Immersive technologies",
+      "category": "HTML/CSS, JavaScript, Gsap, WordPress"
     },
     {
       "slug": "loreal-finance-2022",
@@ -34,10 +34,11 @@
       "team": "Ippon Technologies"
     },
     {
-      "slug": "6freedom",
-      "link": "https://6freedom.studio/",
-      "title": "6freedom - Immersive technologies",
-      "category": "HTML/CSS, JavaScript, Gsap, WordPress"
+      "slug": "loreal-finance-2021",
+      "link": "https://www.loreal-finance.com/en/annual-report-2021/",
+      "title": "L’Oréal - Annual report 2021",
+      "category": "HTML/CSS, JavaScript, Twig, WordPress",
+      "team": "Volatil"
     }
   ]
   

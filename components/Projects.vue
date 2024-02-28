@@ -3,7 +3,7 @@
 		<div class="container">
 			<h2 class="typo-t2 projects-title">My latest projects</h2>
 
-			<p class="typo-p">I’ve been creating websites for more than 5 years in freelance. I had the chance to work for a lot of different industries and companies.</p>
+			<p class="typo-p">I've been creating websites for 10 years, including 5 years as a freelancer. I had the chance to work for a lot of different industries and companies.</p>
 
             <div class="projects-list">
                 <project-card

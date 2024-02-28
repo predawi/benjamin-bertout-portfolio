@@ -29,7 +29,7 @@
 
 // Reveal effect
 .animate-delay {
+  top: 0 !important;
   transition-duration: 0.5s;
-  transform: translateY(0) !important;
   opacity: 1 !important;
 }

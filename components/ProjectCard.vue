@@ -1,5 +1,5 @@
 <template>
-    <div class="project-card" :id=id>
+    <div class="project-card js-project-card" id={{id}}>
         <a :href=link class="project-card__link" target="_blank">
             <div class="project-card__deco"></div>
             <h3 class="project-card__title">{{ title }}</h3>
@@ -25,13 +25,18 @@ export default {
             { threshold: 0.5 }
         );
 
-        observer.observe(document.querySelector('.project-card[id=' + this.id + ']'));
-    }
+        const projectCards = document.querySelectorAll('.js-project-card');
+        for (const card of projectCards) {
+            observer.observe(card);
+        }
+    },
 }
 </script>
 
 <style lang="scss">
 .project-card {
+    position: relative;
+    top: rem(10px);
     border-bottom: 1px solid rgba(#fff, 0.15);
 
     @include tablet {
@@ -62,8 +67,12 @@ export default {
             height: 100%;
             background: radial-gradient(rgb(0, 0, 0) 0%, rgb(23, 24, 37) 40%, rgb(226 188 181));
             background-position: -280px 15px;
-            background-size: 130%;
+            background-size: 200%;
             mix-blend-mode: darken;
+
+            @include tablet {
+                background-size: 130%;
+            }
         }
     }
 
@@ -98,12 +107,14 @@ export default {
 
     &__category,
     &__team {
+        display: block;
         position: relative;
         z-index: 1;
         margin-top: rem(16px);
         color: var(--secondary-color);
 
         @include tablet {
+            display: inline;
             margin-top: 0;
             position: relative;
             top: -6px;

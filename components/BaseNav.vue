@@ -8,13 +8,13 @@
 
 				<ul class="nav__list" type="none">
 					<li class="nav__list-item">
-						<NuxtLink to="/">home/projects</NuxtLink>
+						<NuxtLink to="/" @click="isToggled = !isToggled">home/projects</NuxtLink>
 					</li>
 					<li class="nav__list-item">
-						<NuxtLink to="/about">about</NuxtLink>
+						<NuxtLink to="/about" @click="isToggled = !isToggled">about</NuxtLink>
 					</li>
 					<li class="nav__list-item">
-						<NuxtLink to="/contact">contact</NuxtLink>
+						<NuxtLink to="/contact" @click="isToggled = !isToggled">contact</NuxtLink>
 					</li>
 				</ul>
 			</div>
@@ -108,15 +108,15 @@ export default {
 
         a {
             color: var(--text-color);
-            transition: .2s ease-out;
 
             &:hover,
             &:focus {
-                color: var(--secondary-color);
+                color: var(--tertiary-color);
             }
 
             &.router-link-active {
                 color: var(--secondary-color);
+                cursor: default;
             }
         }
     }

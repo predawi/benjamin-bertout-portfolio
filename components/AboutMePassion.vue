@@ -4,7 +4,7 @@
         <div class="passion__container">
             <h1 class="typo-t2 passion__title">Passion</h1>
 
-            <p class="typo-p passion__description">Epicurean . Tech enthusiast . Music addict . Cat owner</p>
+            <p class="typo-p passion__description">Epicurean . Tech enthusiast . Music addict . Cat owner . Jurassic Park fanatic</p>
         </div>
 
     </section>
@@ -39,9 +39,14 @@ export default {
     &__description {
         max-width: 450px;
         margin: rem(30px) auto 0;
+        padding: 0 rem(25px);
         line-height: rem(30px);
         font-size: rem(20px);
         font-weight: 400;
+
+        @include tablet {
+            padding: 0;
+        }
     }
 }
 </style>

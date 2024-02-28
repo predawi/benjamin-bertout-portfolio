@@ -48,7 +48,7 @@ export default {
     &-name {
         line-height: rem(30px);
         font-size: rem(18px);
-        font-weight: 400;
+        font-weight: 300;
 
         @include tablet {
             line-height: rem(40px);
