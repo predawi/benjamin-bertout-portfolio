@@ -37,10 +37,16 @@ export default {
 
         observer.observe(document.querySelector('.intro'));
 
-        [...document.querySelectorAll('.intro__picture > span')].forEach(function (item, index) {
-            item.style.transitionDelay = index * 0.01 + 's';
-            item.style.opacity = 1;
+        [...document.querySelectorAll('.intro__picture > span')].forEach(function (introSpan, index) {
+            introSpan.style.opacity = 0;
         });
+
+        setTimeout(() => {
+            [...document.querySelectorAll('.intro__picture > span')].forEach(function (introSpan, index) {
+                introSpan.style.transitionDelay = index * 0.01 + 's';
+                introSpan.style.opacity = 1;
+            });
+        }, 500);
     },
 }
 </script>
