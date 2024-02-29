@@ -107,6 +107,11 @@ export default {
         @include tablet {
             margin-top: rem(50px);
         }
+
+        &:hover,
+        &:focus {
+            color: var(--secondary-color);
+        }
     }
 }
 </style>

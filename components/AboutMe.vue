@@ -14,7 +14,8 @@
                 <h2 class="typo-t2">Skills</h2>
                 <ul class="typo-p">
                     <li>HTML/CSS (Less, Sass)</li>
-                    <li>JavaScript: vanilla, ES6, jQuery, Vue.js, Nuxt.js</li>
+                    <li>JavaScript: vanilla, ES6, jQuery</li>
+                    <li>Vue.js, Nuxt.js (beginner)</li>
                     <li>PHP: WordPress, Gutenberg</li>
                     <li>Twig templating</li>
                     <li>SEO, accessibility</li>
