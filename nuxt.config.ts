@@ -42,18 +42,22 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    '@nuxt/image',
     ['@nuxtjs/google-fonts', {
         families: {
           Lexend: [300, 400, 500],
           Lato: [300, 400],
         }
     },],
+    '@nuxt/image',
   ],
 
   plugins: [
     { src: 'plugins/item.js', ssr: false }
   ],
+
+  image: {
+    provider: "ipx"
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
