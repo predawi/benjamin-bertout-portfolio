@@ -35,5 +35,9 @@
     "Android 2.3",
     "Android >= 4",
     "Opera >= 12"
-  ]
+  ],
+  "dependencies": {
+    "@nuxt/image": "^1.3.0",
+    "sharp": "^0.33.2"
+  }
 }

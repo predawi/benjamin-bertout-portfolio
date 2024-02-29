@@ -17,9 +17,6 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ],
-      script: [
-        { src: '/js/gsap.min.js' },
-      ]
     },
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'layout', mode: 'out-in' }
@@ -45,12 +42,13 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    '@nuxt/image',
     ['@nuxtjs/google-fonts', {
         families: {
           Lexend: [300, 400, 500],
           Lato: [300, 400],
         }
-    }],
+    },],
   ],
 
   plugins: [
