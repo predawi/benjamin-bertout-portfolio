@@ -5,7 +5,7 @@
 
             <ul class="contact__list">
                 <li class="contact__item"><a href="https://www.malt.fr/profile/benjaminbertout" target="_blank">MALT</a></li>
-                <li class="contact__item"><a href="www.linkedin.com/in/benjamin-bertout-04634441" target="_blank">LINKEDIN</a></li>
+                <li class="contact__item"><a href="https://www.linkedin.com/in/benjamin-bertout-04634441" target="_blank">LINKEDIN</a></li>
                 <li class="contact__item secondary-color">bertout.benjamin@gmail.com</li>
             </ul>
         </div>

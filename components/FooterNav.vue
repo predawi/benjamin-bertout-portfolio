@@ -7,7 +7,7 @@
                     <a href="https://www.malt.fr/profile/benjaminbertout" target="_blank"><span>malt</span></a>
                 </li>
                 <li class="footer-nav__list-item">
-                    <a href="www.linkedin.com/in/benjamin-bertout-04634441" target="_blank"><span>linkedIn</span></a>
+                    <a href="https://www.linkedin.com/in/benjamin-bertout-04634441" target="_blank"><span>linkedIn</span></a>
                 </li>
                 <li class="footer-nav__list-item">
                     <NuxtLink to="/contact">email</NuxtLink>
