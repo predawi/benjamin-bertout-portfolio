@@ -51,7 +51,12 @@ export default defineNuxtConfig({
           Lato: [300, 400],
         }
     },],
+    '@nuxt/image',
   ],
+
+  image: {
+    provider: 'netlify',
+  },
 
   plugins: [
     { src: 'plugins/item.js', ssr: false }

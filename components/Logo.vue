@@ -1,7 +1,15 @@
 <template>
     <div class="header__logo">
         <NuxtLink to="/">
-            <img src="~/assets/ui/bbertout-logo.png" class="header__logo-img" alt="Discover Nuxt 3" width="65" height="60" />
+            <!-- <img src="~/assets/ui/bbertout-logo.png" class="header__logo-img" alt="Discover Nuxt 3" width="65" height="60" /> -->
+
+            <NuxtImg 
+                provider="netlify"    
+                src="/img/bbertout-logo.svg" 
+                class="header__logo-img" 
+                alt="bbertout wolf logo" 
+                width="65" 
+                height="60"/>
 
             <div class="header__logo-text">
                 <span class="header__logo-name">Benjamin Bertout</span>
