@@ -12,7 +12,7 @@ const getMousePos = e => {
 // This function generates a random string of a given length
 const getRandomString = length => {
     let result = '';
-    let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let characters = '/^o.';
     for (let i = 0; i < length; i++) {
         result += characters.charAt(Math.floor(Math.random() * characters.length));
     }

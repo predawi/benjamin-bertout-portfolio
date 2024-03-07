@@ -1,6 +1,6 @@
 import { lerp, getMousePos, getRandomString } from './utils.js';
 
-export default () => {
+export default defineNuxtPlugin(nuxtApp => {
     // Initialize mouse position object
     let mousepos = {x: 0, y: 0};
 
@@ -156,4 +156,4 @@ export default () => {
     if (process.client) {
         [...document.querySelectorAll('.project-card__link')].forEach(img => new Item(img));
     }
-}
+})
