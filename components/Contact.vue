@@ -59,6 +59,7 @@ export default {
             flex-wrap: wrap;
             padding: rem(50px) 0 rem(40px);
             list-style: disc;
+            list-style-position: inside;
         }
     }
 
@@ -69,6 +70,10 @@ export default {
         font-size: rem(14px);
         font-weight: 500;
         text-transform: uppercase;
+
+        @include tablet {
+            padding-left: rem(4px);
+        }
 
         a {
             &:hover,

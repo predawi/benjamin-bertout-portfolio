@@ -21,6 +21,8 @@
                     <li>SEO, accessibility</li>
                     <li>Git</li>
                 </ul>
+
+                <p class="typo-p">This website as been made using Nuxt.js</p>
             </div>
 
             <div class="about-me__picture desktop-only" tabindex="-1">
