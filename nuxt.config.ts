@@ -59,7 +59,6 @@ export default defineNuxtConfig({
   },
 
   plugins: [
-    { src: 'plugins/item.js', ssr: false }
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
