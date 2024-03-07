@@ -22,7 +22,7 @@
 	</section>
 </template>
 
-<script>
+<script lang="ts">
 import projects from '../data/project-list.json';
 import ProjectCard from '~/components/ProjectCard.vue';
 

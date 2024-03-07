@@ -9,7 +9,7 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
     name: 'project-card',
     props: ['link', 'title', 'category', 'team', 'key'],
@@ -25,10 +25,9 @@ export default {
             { threshold: 0.5 }
         );
 
-        const projectCards = document.querySelectorAll('.js-project-card');
-        for (const card of projectCards) {
+        document.querySelectorAll('.js-project-card').forEach((card) => {
             observer.observe(card);
-        }
+        });
     },
 }
 </script>

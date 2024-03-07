@@ -12,7 +12,7 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
 	name: 'Contact',
     mounted() {
@@ -27,7 +27,7 @@ export default {
             { threshold: 0.5 }
         );
 
-        observer.observe(document.querySelector('.contact'));
+        observer.observe(document.querySelector('.contact') as HTMLElement);
     }
 }
 </script>

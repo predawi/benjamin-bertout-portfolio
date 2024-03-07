@@ -6,7 +6,7 @@
 	</footer>
 </template>
 
-<script>
+<script lang="ts">
 import FooterNav from '~/components/FooterNav.vue';
 
 export default {

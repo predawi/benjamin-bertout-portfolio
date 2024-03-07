@@ -7,7 +7,7 @@
 	</header>
 </template>
 
-<script>
+<script lang="ts">
 import Logo from '~/components/Logo.vue';
 import BaseNav from '~/components/BaseNav.vue';
 

@@ -25,7 +25,7 @@
     </section>
 </template>
 
-<script>
+<script lang="ts">
 export default {
 	name: 'Intro',
     mounted() {
@@ -40,16 +40,16 @@ export default {
             { threshold: 0.5 }
         );
 
-        observer.observe(document.querySelector('.intro'));
-
-        [...document.querySelectorAll('.intro__picture > span')].forEach(function (introSpan, index) {
-            introSpan.style.opacity = 0;
+        observer.observe(document.querySelector('.intro') as HTMLElement);
+        
+        document.querySelectorAll('.intro__picture > span').forEach((introSpan) => {
+            (introSpan as HTMLElement).style.opacity = '0';
         });
 
         setTimeout(() => {
-            [...document.querySelectorAll('.intro__picture > span')].forEach(function (introSpan, index) {
-                introSpan.style.transitionDelay = index * 0.01 + 's';
-                introSpan.style.opacity = 1;
+            document.querySelectorAll('.intro__picture > span').forEach((introSpan, index) => {
+                (introSpan as HTMLElement).style.transitionDelay = index * 0.01 + 's';
+                (introSpan as HTMLElement).style.opacity = '1';
             });
         }, 500);
     },

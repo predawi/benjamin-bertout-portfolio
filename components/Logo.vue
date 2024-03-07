@@ -17,12 +17,6 @@
     </div>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
 <style lang="scss">
 .header__logo {
     position: relative;

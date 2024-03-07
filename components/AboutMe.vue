@@ -30,7 +30,7 @@
     </section>
 </template>
 
-<script>
+<script lang="ts">
 export default {
 	name: 'AboutMe',
     mounted() {
@@ -45,16 +45,16 @@ export default {
             { threshold: 0.5 }
         );
 
-        observer.observe(document.querySelector('.about-me'));
+        observer.observe(document.querySelector('.about-me') as HTMLElement);
 
-        [...document.querySelectorAll('.about-me__picture > span')].forEach(function (aboutSpan, index) {
-            aboutSpan.style.opacity = 0;
+        document.querySelectorAll('.about-me__picture > span').forEach((aboutSpan) => {
+            (aboutSpan as HTMLElement).style.opacity = '0';
         });
         
         setTimeout(() => {
-            [...document.querySelectorAll('.about-me__picture > span')].forEach(function (aboutSpan, index) {
-                aboutSpan.style.transitionDelay = index * 0.01 + 's';
-                aboutSpan.style.opacity = 1;
+            document.querySelectorAll('.about-me__picture > span').forEach((aboutSpan, index) => {
+                (aboutSpan as HTMLElement).style.transitionDelay = index * 0.01 + 's';
+                (aboutSpan as HTMLElement).style.opacity = '1';
             });
         }, 500);
     }
