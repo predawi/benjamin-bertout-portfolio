@@ -1,5 +1,11 @@
 [
     {
+      "slug": "loreal-finance-2023",
+      "link": "https://www.loreal-finance.com/fr/rapport-annuel-2023/",
+      "category": "HTML/CSS, JavaScript, Twig, WordPress",
+      "team": "Volatil"
+    },
+    {
       "slug": "6freedom",
       "link": "https://6freedom.studio/",
       "title": "6freedom - Immersive technologies",
@@ -32,13 +38,6 @@
       "title": "Alexandre Mars - Entrepreneur",
       "category": "HTML/CSS, JavaScript, WordPress",
       "team": "Ippon Technologies"
-    },
-    {
-      "slug": "loreal-finance-2021",
-      "link": "https://www.loreal-finance.com/en/annual-report-2021/",
-      "title": "L’Oréal - Annual report 2021",
-      "category": "HTML/CSS, JavaScript, Twig, WordPress",
-      "team": "Volatil"
     }
   ]
   
