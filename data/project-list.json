@@ -2,6 +2,7 @@
     {
       "slug": "loreal-finance-2023",
       "link": "https://www.loreal-finance.com/fr/rapport-annuel-2023/",
+      "title": "L’Oréal - Annual report 2023",
       "category": "HTML/CSS, JavaScript, Twig, WordPress",
       "team": "Volatil"
     },
@@ -12,16 +13,16 @@
       "category": "HTML/CSS, JavaScript, Gsap, WordPress"
     },
     {
-      "slug": "loreal-finance-2022",
-      "link": "https://www.loreal-finance.com/en/annual-report-2022/",
-      "title": "L’Oréal - Annual report 2022",
+      "slug": "lacoste-90",
+      "link": "https://90.lacoste.com/",
+      "title": "Lacoste - 90th anniversary",
       "category": "HTML/CSS, JavaScript, Twig, WordPress",
       "team": "Volatil"
     },
     {
-      "slug": "lacoste-90",
-      "link": "https://90.lacoste.com/",
-      "title": "Lacoste - 90th anniversary",
+      "slug": "loreal-finance-2022",
+      "link": "https://www.loreal-finance.com/en/annual-report-2022/",
+      "title": "L’Oréal - Annual report 2022",
       "category": "HTML/CSS, JavaScript, Twig, WordPress",
       "team": "Volatil"
     },
