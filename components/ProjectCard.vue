@@ -9,7 +9,7 @@
     </div>
 </template>
 
-<script lang="ts">
+<script>
 import { lerp, getMousePos, getRandomString } from '/assets/js/utils.js';
 
 export default {
