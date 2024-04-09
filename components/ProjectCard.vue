@@ -206,6 +206,7 @@ export default {
         padding: rem(30px) 0;
         position: relative;
 	    overflow: hidden;
+        transition: padding .2s ease-in-out;
 
         --x: 0px; 
 	    --y: 0px;
@@ -214,6 +215,13 @@ export default {
             display: flex;
             align-items: flex-end;
             padding: rem(30px) 0 rem(10px);
+        }
+
+        &:hover,
+        &:focus {
+            @include tablet {
+                padding: rem(27px) 0 rem(13px);
+            }
         }
 
         &::after {

@@ -48,7 +48,7 @@ export default {
 
         setTimeout(() => {
             document.querySelectorAll('.intro__picture > span').forEach((introSpan, index) => {
-                (introSpan as HTMLElement).style.transitionDelay = index * 0.01 + 's';
+                (introSpan as HTMLElement).style.transitionDelay = index * 0.005 + 's';
                 (introSpan as HTMLElement).style.opacity = '1';
             });
         }, 500);
@@ -98,6 +98,7 @@ export default {
         & > span {
             white-space: nowrap;
             opacity: 0;
+            transition: opacity .2s ease-out;
         }
     }
 

@@ -55,7 +55,7 @@ export default {
         
         setTimeout(() => {
             document.querySelectorAll('.about-me__picture > span').forEach((aboutSpan, index) => {
-                (aboutSpan as HTMLElement).style.transitionDelay = index * 0.01 + 's';
+                (aboutSpan as HTMLElement).style.transitionDelay = index * 0.007 + 's';
                 (aboutSpan as HTMLElement).style.opacity = '1';
             });
         }, 500);
@@ -107,6 +107,7 @@ export default {
 
         & > span {
             opacity: 0;
+            transition: opacity .2s ease-out;
         }
     }
 }
